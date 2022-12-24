@@ -1,0 +1,123 @@
+body{
+    background-color: #344648;
+}
+div p{
+    margin-top: 0.2vh;
+}
+#session{
+    position: absolute;
+    margin-left: 86vw;
+    margin-top: 20vh;
+}
+#session div{
+    width: 6vw;
+    height: 5vw;
+    margin-bottom: 1vh;
+}
+#title{
+    margin-bottom: 20px;
+}
+#inner{
+    background-color: #D7CCEC;
+}
+#avatar-rest{
+    grid-row: 4/8;
+    grid-column: 1/4;
+    z-index: 9;
+}
+svg{
+    height: 17vh;
+    margin-left: 50%;
+}
+#source{
+    grid-row: 16/17;
+    grid-column: 4/28;
+}
+#shelves{
+    grid-row: 4/16;
+    grid-column: 4/28;
+    overflow-y: scroll;
+}
+.shelf{
+    background-color: #AE8FB1;
+    width: 25%;
+    height: 25%;
+    float: left;
+    vertical-align: top;
+    margin-bottom: 4%;
+}
+img{
+    height: 13vh;
+    width: auto;
+    margin-top: 1vh;
+    border: solid 1px #c9a981;
+}
+p{
+    margin-top: 0;
+    padding-top: 0;
+}
+#color-box{
+    grid-row: 3/16;
+    grid-column: 4/28;
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+#free-color{
+    background-color: #AE8FB1;
+    grid-row: 3/4;
+    grid-column: 10/16;
+}
+#free-color p{
+    color: black;
+}
+#reveal-mode{
+    background-color: #344648;
+    grid-row: 3/4;
+    grid-column: 16/22;
+}
+#reveal-mode p{
+    color: white;
+}
+#color-image{
+    grid-row: 1/10;
+    grid-column: 1/25;
+}
+#color-image svg{
+    height: 50vh;
+    width: auto;
+    margin: auto;
+}
+#color-image-reveal{
+    grid-row: 1/8;
+    grid-column: 1/10;
+}
+#color-image-reveal svg{
+    height: 55vh;
+    width: auto;
+    margin: auto 12vw;
+}
+#color-pick{
+    grid-row: 11/12;
+    grid-column: 7/10;
+    background-color: #AE8FB1;
+}
+#color-input{
+    height: 5vh;
+    width: 6vw;
+}
+#default-fill{
+    grid-row: 11/12;
+    grid-column: 11/15;
+    background-color: #AE8FB1;
+}
+#save{
+    grid-row: 11/12;
+    grid-column: 16/19;
+    background-color: #AE8FB1;
+}
+#description{
+    grid-row: 16/17;
+    grid-column: 7/19;
+    margin-top: 5vh;
+}

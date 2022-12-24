@@ -1,0 +1,19 @@
+<div id="title">
+    <center><h1>Color</h1></center>
+</div>
+<div id="color-box">
+    <div id="color-image">
+        <center>
+            {{> (lookup . 'content')}}
+        </center>
+    </div>
+    <div id="color-pick">
+        <center><input id="color-input" type="color"></center>
+    </div>
+    <div id="default-fill">
+        <center><p>Show Default</p></center>
+    </div>
+    <div id="save" onclick="saveProgress({{itemId}})">
+        <center><p>Save</p></center>
+    </div>
+</div>

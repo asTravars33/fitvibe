@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Relax</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/4_relax.css">
+</head><br>
+<body onload="fill('{{num}}')">
+    <div id="session">
+    </div>
+    <div id="inner">
+        <div id="title">
+            <center><h1>Relax</h1></center>
+        </div>
+        <div id="free-color" onclick="showColor()">
+            <center><p>Color</p></center>
+        </div>
+        <div id="reveal-mode" onclick="showReveal()">
+            <center><p>Reveal</p></center>
+        </div>
+        <div id="avatar-rest">
+            {{> avatar skin=skin-color shirt=shirt-color pants=pants-color shoes=shoes-color hair=hair-color hair-visibility=hair-vis}}
+        </div>
+        <div id="shelves">
+            {{#each coloring-pages}}
+                <div class="shelf" id="{{itemId}}" onclick="gotoColor('{{itemName}}', '{{itemId}}', '{{@index}}')">
+                    <center>
+                    <img src="./img/4_coloring_{{itemName}}.png">
+                    <p>{{itemName}}</p>
+                    </center>
+                </div>
+            {{/each}}
+            <foo id="shelves-extra">
+                <div class="shelf"></div>
+                <div class="shelf"></div>
+            </foo>
+        </div>
+        <div id="source">
+            <center><p>*All images from Pixabay</p></center>
+        </div>
+    </div>
+<script src="https://cdn.socket.io/3.0.5/socket.io.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/4_relax.js"></script>
+</body>
+</html>

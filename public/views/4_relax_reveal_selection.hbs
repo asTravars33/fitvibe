@@ -1,0 +1,29 @@
+<div id="title">
+            <center><h1>Relax</h1></center>
+        </div>
+        <div id="free-color" style="background-color: #344648;" onclick="showColor()">
+            <center><p style="color: white;">Color</p></center>
+        </div>
+        <div id="reveal-mode" style="background-color: #AE8FB1;" onclick="showReveal()">
+            <center><p style="color: black;">Reveal</p></center>
+        </div>
+        <div id="avatar-rest">
+            {{> avatar skin=skin-color shirt=shirt-color pants=pants-color shoes=shoes-color hair=hair-color hair-visibility=hair-vis}}
+        </div>
+        <div id="shelves">
+            {{#each coloring-pages}}
+                <div class="shelf" id="{{itemId}}" onclick="gotoReveal('{{itemName}}', '{{@index}}')">
+                    <center>
+                    <img src="./img/4_reveal_{{itemName}}.png">
+                    <p>{{itemName}}</p>
+                    </center>
+                </div>
+            {{/each}}
+            <foo id="shelves-extra">
+                <div class="shelf"></div>
+                <div class="shelf"></div>
+            </foo>
+        </div>
+        <div id="source">
+            <center><p>*All images from Pixabay</p></center>
+        </div>

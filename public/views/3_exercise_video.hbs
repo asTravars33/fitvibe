@@ -1,0 +1,13 @@
+<button id="participants" onclick="toggleParticipants()">
+    Hide Participants 
+</button>
+<div id="participants-div">
+    {{#each participants}}
+        {{> avatar skin=skin-color shirt=shirt-color pants=pants-color shoes=shoes-color hair=hair-color hair-visibility=hair-vis}}
+    {{/each}}
+</div>
+<div id="video">
+    <iframe src={{url}}>
+    </iframe>
+</div>
+<button id="video-button" onclick="finishWorkout()">Done</button>

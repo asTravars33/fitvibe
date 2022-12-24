@@ -1,0 +1,160 @@
+body{
+    background-color: #344648;
+}
+#inner{
+    background-color: #FBE0C3;
+}
+#stats{
+    grid-row: 4/6;
+    grid-column: 3/16;
+    border: 3px solid #344648;
+    /*display: grid;*/
+    /*grid-template-columns: repeat(2, 1fr);*/
+    background-color: #D7CCEC;
+}
+#coin-count{
+    /*grid-column: 1/2;*/
+    margin-left: 8vw;
+}
+#streak-count{
+    grid-column: 2/3;
+    margin-right: 30%;
+}
+.big-number{
+    display: inline-block;
+    vertical-align: top;
+}
+.big-number p{
+    font-size: 5.5vh;
+    margin-top: 0.8vh;
+    margin-left: 25%;
+}
+#coin, #streak{
+    display: inline-block;
+    margin-left: 12%;
+    margin-top: 3%;
+    height: 7vh;
+    width: auto;
+}
+#accessories{
+    grid-row: 7/10;
+    grid-column: 3/16;
+    border: 5px solid #344648;
+    background-color: #D7CCEC;
+}
+.box-label p{
+    margin-top:0;
+    margin-bottom: 0;
+    padding: 0;
+    margin-left: 5px;
+}
+.box-items{
+    overflow-x: scroll;
+    margin-top: 0;
+    padding: 0;
+}
+.item{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0;
+}
+.item img{
+    height: 5vh;
+    width: auto;
+    margin-top: 2px;
+}
+.item p{
+    margin-top: 0;
+}
+.true{
+    box-shadow: 0 0 20px #ffd700;
+}
+#backgrounds{
+    grid-row: 10/13;
+    grid-column: 3/16;
+    border: 5px solid #344648;
+    background-color: #D7CCEC;
+}
+#coloring-pages{
+    grid-row: 13/16;
+    grid-column: 3/16;
+    border: 5px solid #344648;
+    background-color: #D7CCEC;
+}
+#avatar{
+    grid-row: 4/14;
+    grid-column: 17/21;
+    padding: 0;
+}
+svg{
+    display: block;
+    height: 50vh;
+    margin: auto;
+}
+#personalize{
+    grid-row: 14/16;
+    grid-column: 17/21;
+    background-color: #D7CCEC;
+    border: 5px solid #344648;
+}
+#personalize p{
+    margin-left: 10%;
+    margin-bottom: 0;
+    margin-top: 2%;
+}
+#personalize button{
+    height: 4.3vh;
+    font-size: 2vh;
+    width: 5vw;
+    background-color: #FBE0C3;
+    border: 2px solid #9D5159;
+}
+#color-input{
+    margin-left: 1vw;
+    margin-top: 1%;
+    height: 4.3vh;
+    width: 5vw;
+}
+#profile-info{
+    grid-row: 4/16;
+    grid-column: 22/29;
+    background-color: #D7CCEC;
+    border: 5px solid #344648;
+}
+form p{
+    font-size: 17px;
+    margin-top: 0;
+    padding-left: 100px;
+    margin-left: 100px;
+    display: block;
+    margin-left: 5%;
+}
+form input{
+    margin-top: 0;
+    padding-left: 10px;
+    background: #FBE0C3;
+    border: 3px solid #344648;
+}
+#update_account{
+    background: #9D5159;
+}
+.oval{
+    width: 85%;
+    line-height: 30px;
+    font-size: 16px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-left: 5%;
+}
+#first{
+    height: 100px;
+    background-color: green;
+}
+#second{
+    height: 200px;
+    background-color: blue;
+}

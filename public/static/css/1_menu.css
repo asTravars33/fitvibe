@@ -1,0 +1,30 @@
+body{
+    background-color: #344648;
+}
+#inner{
+    background-color: #D7CCEC;
+}
+#profile-box{
+    grid-column: 3/11;
+    background-color: #FBE0C3;
+}
+#exercise-box{
+    grid-column: 12/20;
+    background-color: #FFBB98;
+}
+#relax-box{
+    grid-column: 21/29;
+    background-color: #CBAFCD;
+}
+.box{
+    grid-row: 4/16;
+    border: 5px solid #344648;
+}
+.box:hover{
+    box-shadow: 0 0 20px #ffd700;
+}
+.box-img{
+    height: 45vh;
+    width: auto;
+    margin-top: 12px;
+}

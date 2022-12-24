@@ -1,0 +1,75 @@
+<div id="title">
+            <center><h1>Profile</h1></center>
+        </div>
+        <div id="stats">
+            <div id="coin-count">
+                <img id="coin" src="./img/2_coins.png">
+                <div class="big-number">
+                    <p>{{profile.coins}}</p>
+                </div>
+            </div>
+            <div id="streak-count">
+                <img id="streak" src="./img/2_streak.png">
+                <div class="big-number">
+                    <p>{{profile.streak}}</p>
+                </div>
+            </div>
+        </div>
+        <div id="accessories">
+            <div id="accessories-label" class="box-label">
+                <center><p>Accessories (20)</p></center>
+            </div>
+            <div id="accessories-items" class="box-items">
+                {{#each accessories}}
+                    <div class="item" onclick="buy('{{itemCost}}','{{itemId}}', '{{itemType}}', '{{itemName}}')">
+                        <img src="./img/2_accessory_{{itemName}}.png">
+                        <!--<center><p>{{itemName}}: {{itemCost}}</p></center>-->
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+        <div id="backgrounds">
+            <div id="backgrounds-label" class="box-label">
+                <center><p>Backgrounds (30)</p></center>
+            </div>
+            <div id="backgrounds-items" class="box-items">
+                {{#each backgrounds}}
+                    <div class="item" onclick="buy('{{itemCost}}','{{itemId}}', '{{itemType}}', '{{itemName}}')">
+                        <img src="./img/2_background_{{itemName}}.png">
+                        <!--<p>{{itemName}}: {{itemCost}}</p>-->
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+        <div id="coloring-pages">
+            <div id="coloring-label" class="box-label">
+                <center><p>Coloring Pages (10)</p></center>
+            </div>
+            <div id="coloring-items" class="box-items">
+                {{#each coloring}}
+                    <div class="item" onclick="buy('{{itemCost}}','{{itemId}}', '{{itemType}}', '{{itemName}}')">
+                        <img src="./img/4_coloring_{{itemName}}.png">
+                        <!--<center><p>{{itemName}}: {{itemCost}}</p></center>-->
+                    </div>
+                {{/each}} 
+            </div>
+        </div>
+        <div id="avatar">
+            {{> avatar skin=skin-color shirt=shirt-color pants=pants-color shoes=shoes-color hair=hair-color hair-visibility=hair-vis}}
+        </div>
+        <div id="personalize">
+            <p>Color: </p>
+            <input id="color-input" type="color">
+            <button onclick="saveAvatar()">Save</button>
+        </div>
+        <div id="profile-info">
+            <center><h4>Account Info</h4></center>
+            <p>Name</p>
+            <input id="username" class="oval" type="text" value={{profile.username}}>
+            <p>Email</p>
+            <input id="email" type="text" class="oval" value={{profile.email}}>
+            <p>Password</p>
+            <input id="password" type="password" class="oval" value={{profile.password}}>
+            <br>
+            <button onclick="updateUserInfo()" class="oval" >Save Changes</button>
+        </div>
